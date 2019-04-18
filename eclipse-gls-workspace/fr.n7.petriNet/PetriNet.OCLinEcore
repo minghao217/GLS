@@ -1,0 +1,65 @@
+import ecore : 'http://www.eclipse.org/emf/2002/Ecore' ;
+
+package petriNet : petrinet = 'http://petrinet'
+{
+	class Place extends Noeud
+	{
+		attribute jeton : ecore::EInt[1];
+		invariant nombreJetonNonNul: jeton >= 0;
+	}
+	class Transition extends Noeud;
+	abstract class Noeud extends PetriNetElt
+	{
+		attribute name : String[1];
+		property noeudsSuccesseurs#predecesseur : Arc[*|1] { ordered };
+		property noeudsPredecesseurs#successeur : Arc[*|1] { ordered };
+		invariant noEmptyName: name.size() > 0;
+	}
+	class Arc extends PetriNetElt
+	{
+		property predecesseur#noeudsSuccesseurs : Noeud[?];
+		property successeur#noeudsPredecesseurs : Noeud[?];
+		attribute poids : ecore::EInt[1];
+		attribute typeArc : TypeArc[?];
+		invariant poidsNonNul: poids > 0;
+	}
+	abstract class PetriNetElt
+	{
+		annotation _'http://www.obeo.fr/dsl/dnc/archetype'
+		(
+			archetype = 'Role'
+		);
+		property net : PetriNet[1];
+	}
+	class PetriNet
+	{
+		property petrinetelt : PetriNetElt[*|1] { ordered composes };
+		attribute name : String[1];
+		invariant placeNoSameName: 
+				self.petrinetelt
+				->select(e: PetriNetElt | e.oclIsKindOf(Place))
+				->collect(e: PetriNetElt | e.oclAsType(Place))
+				->forAll(w1, w2: Place | w1 = w2 or w1.name <> w2.name);
+		invariant transitionNoSameName: 
+				self.petrinetelt
+				->select(e: PetriNetElt | e.oclIsKindOf(Transition))
+				->collect(e: PetriNetElt | e.oclAsType(Transition))
+				->forAll(w1, w2: Transition | w1 = w2 or w1.name <> w2.name);
+		invariant notSameSuccessorPredecessor: 
+				self.petrinetelt
+				->select(e: PetriNetElt | e.oclIsKindOf(Arc))
+				->collect(e: PetriNetElt | e.oclAsType(Arc))
+				->forAll(a: Arc| a.successeur <> a.predecesseur );
+		invariant notPlaceToPlaceOrTransitionToTransition: 
+				self.petrinetelt
+				->select(e: PetriNetElt | e.oclIsKindOf(Arc))
+				->collect(e: PetriNetElt | e.oclAsType(Arc))
+				->forAll(a: Arc| (a.successeur.oclIsTypeOf(Place) and a.predecesseur.oclIsTypeOf(Transition)) or (a.successeur.oclIsTypeOf(Transition) and a.predecesseur.oclIsTypeOf(Place) ) );
+		invariant noEmptyName: name.size() > 0;
+	}
+	enum TypeArc { serializable }
+	{
+		literal ArcSimple;
+		literal ReadArc = 1;
+	}
+}

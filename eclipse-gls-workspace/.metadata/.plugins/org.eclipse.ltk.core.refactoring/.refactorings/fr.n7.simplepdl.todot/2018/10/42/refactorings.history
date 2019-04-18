@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Renaming module &apos;generate&apos; with the new name &apos;toDot&apos;" description="Renaming module generate" flags="6" id="org.eclipse.acceleo.ide.ui.refactor.renamevariable" module="generate" newName="toDot" stamp="1539939399924"/>
+</session>

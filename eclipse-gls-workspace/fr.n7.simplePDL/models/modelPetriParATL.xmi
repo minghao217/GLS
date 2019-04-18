@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:petrinet="http://petrinet">
+  <petrinet:PetriNet name="developpement"/>
+  <petrinet:Place net="/0" name="Conception_ready" noeudsSuccesseurs="/7" jeton="1"/>
+  <petrinet:Place net="/0" name="Conception_started" noeudsSuccesseurs="/45 /48" noeudsPredecesseurs="/8"/>
+  <petrinet:Place net="/0" name="Conception_running" noeudsSuccesseurs="/10" noeudsPredecesseurs="/9"/>
+  <petrinet:Place net="/0" name="Conception_finished" noeudsSuccesseurs="/46 /47" noeudsPredecesseurs="/11"/>
+  <petrinet:Transition net="/0" name="Conception_start" noeudsSuccesseurs="/8 /9" noeudsPredecesseurs="/7 /55 /57"/>
+  <petrinet:Transition net="/0" name="Conception_finish" noeudsSuccesseurs="/11 /56 /58" noeudsPredecesseurs="/10"/>
+  <petrinet:Arc net="/0" predecesseur="/1" successeur="/5" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/5" successeur="/2" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/5" successeur="/3" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/3" successeur="/6" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/6" successeur="/4" poids="1"/>
+  <petrinet:Place net="/0" name="RedactionDoc_ready" noeudsSuccesseurs="/18" jeton="1"/>
+  <petrinet:Place net="/0" name="RedactionDoc_started" noeudsPredecesseurs="/19"/>
+  <petrinet:Place net="/0" name="RedactionDoc_running" noeudsSuccesseurs="/21" noeudsPredecesseurs="/20"/>
+  <petrinet:Place net="/0" name="RedactionDoc_finished" noeudsPredecesseurs="/22"/>
+  <petrinet:Transition net="/0" name="RedactionDoc_start" noeudsSuccesseurs="/19 /20" noeudsPredecesseurs="/18 /45 /59 /61"/>
+  <petrinet:Transition net="/0" name="RedactionDoc_finish" noeudsSuccesseurs="/22 /60 /62" noeudsPredecesseurs="/21 /46"/>
+  <petrinet:Arc net="/0" predecesseur="/12" successeur="/16" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/16" successeur="/13" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/16" successeur="/14" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/14" successeur="/17" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/17" successeur="/15" poids="1"/>
+  <petrinet:Place net="/0" name="Developpement_ready" noeudsSuccesseurs="/29" jeton="1"/>
+  <petrinet:Place net="/0" name="Developpement_started" noeudsPredecesseurs="/30"/>
+  <petrinet:Place net="/0" name="Developpement_running" noeudsSuccesseurs="/32" noeudsPredecesseurs="/31"/>
+  <petrinet:Place net="/0" name="Developpement_finished" noeudsSuccesseurs="/49" noeudsPredecesseurs="/33"/>
+  <petrinet:Transition net="/0" name="Developpement_start" noeudsSuccesseurs="/30 /31" noeudsPredecesseurs="/29 /47 /63 /65"/>
+  <petrinet:Transition net="/0" name="Developpement_finish" noeudsSuccesseurs="/33 /64 /66" noeudsPredecesseurs="/32"/>
+  <petrinet:Arc net="/0" predecesseur="/23" successeur="/27" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/27" successeur="/24" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/27" successeur="/25" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/25" successeur="/28" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/28" successeur="/26" poids="1"/>
+  <petrinet:Place net="/0" name="RedactionTests_ready" noeudsSuccesseurs="/40" jeton="1"/>
+  <petrinet:Place net="/0" name="RedactionTests_started" noeudsPredecesseurs="/41"/>
+  <petrinet:Place net="/0" name="RedactionTests_running" noeudsSuccesseurs="/43" noeudsPredecesseurs="/42"/>
+  <petrinet:Place net="/0" name="RedactionTests_finished" noeudsPredecesseurs="/44"/>
+  <petrinet:Transition net="/0" name="RedactionTests_start" noeudsSuccesseurs="/41 /42" noeudsPredecesseurs="/40 /48 /67 /69"/>
+  <petrinet:Transition net="/0" name="RedactionTests_finish" noeudsSuccesseurs="/44 /68 /70" noeudsPredecesseurs="/43 /49"/>
+  <petrinet:Arc net="/0" predecesseur="/34" successeur="/38" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/38" successeur="/35" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/38" successeur="/36" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/36" successeur="/39" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/39" successeur="/37" poids="1"/>
+  <petrinet:Arc net="/0" predecesseur="/2" successeur="/16" poids="1" typeArc="ReadArc"/>
+  <petrinet:Arc net="/0" predecesseur="/4" successeur="/17" poids="1" typeArc="ReadArc"/>
+  <petrinet:Arc net="/0" predecesseur="/4" successeur="/27" poids="1" typeArc="ReadArc"/>
+  <petrinet:Arc net="/0" predecesseur="/2" successeur="/38" poids="1" typeArc="ReadArc"/>
+  <petrinet:Arc net="/0" predecesseur="/26" successeur="/39" poids="1" typeArc="ReadArc"/>
+  <petrinet:Place net="/0" name="Concepteur" noeudsSuccesseurs="/55" noeudsPredecesseurs="/56" jeton="3"/>
+  <petrinet:Place net="/0" name="Developpeur" noeudsSuccesseurs="/65" noeudsPredecesseurs="/66" jeton="2"/>
+  <petrinet:Place net="/0" name="Machine" noeudsSuccesseurs="/57 /59 /63 /67" noeudsPredecesseurs="/58 /60 /64 /68" jeton="4"/>
+  <petrinet:Place net="/0" name="Redacteur" noeudsSuccesseurs="/61" noeudsPredecesseurs="/62" jeton="1"/>
+  <petrinet:Place net="/0" name="Testeur" noeudsSuccesseurs="/69" noeudsPredecesseurs="/70" jeton="2"/>
+  <petrinet:Arc predecesseur="/50" successeur="/5" poids="2"/>
+  <petrinet:Arc predecesseur="/6" successeur="/50" poids="2"/>
+  <petrinet:Arc predecesseur="/52" successeur="/5" poids="2"/>
+  <petrinet:Arc predecesseur="/6" successeur="/52" poids="2"/>
+  <petrinet:Arc predecesseur="/52" successeur="/16" poids="1"/>
+  <petrinet:Arc predecesseur="/17" successeur="/52" poids="1"/>
+  <petrinet:Arc predecesseur="/53" successeur="/16" poids="1"/>
+  <petrinet:Arc predecesseur="/17" successeur="/53" poids="1"/>
+  <petrinet:Arc predecesseur="/52" successeur="/27" poids="3"/>
+  <petrinet:Arc predecesseur="/28" successeur="/52" poids="3"/>
+  <petrinet:Arc predecesseur="/51" successeur="/27" poids="2"/>
+  <petrinet:Arc predecesseur="/28" successeur="/51" poids="2"/>
+  <petrinet:Arc predecesseur="/52" successeur="/38" poids="2"/>
+  <petrinet:Arc predecesseur="/39" successeur="/52" poids="2"/>
+  <petrinet:Arc predecesseur="/54" successeur="/38" poids="1"/>
+  <petrinet:Arc predecesseur="/39" successeur="/54" poids="1"/>
+</xmi:XMI>

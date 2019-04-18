@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="-1" key="dialogHeight"/>
+		<item value="-1" key="dialogWidth"/>
+		<list key="textEntries">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.emf.importer.ui.EMFModelWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
+			<item value="org.eclipse.emf.parsley.wizards"/>
+			<item value="org.eclipse.emf.parsley.wizards/org.eclipse.emf.parsley.project.Examples"/>
+			<item value="org.eclipse.ui.Examples"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.emf.examples.EMF"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.emf.parsley.ui.Examples"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.emf.validation.examples.category"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.emf.emfstore.examples.EMFStore"/>
+		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="704" key="DIALOG_WIDTH"/>
+		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="993" key="DIALOG_HEIGHT"/>
+		<item value="-87" key="DIALOG_X_ORIGIN"/>
+		<item value="-164" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.jdt.internal.ui.jarpackager.JarPackageWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item value="org.eclipse.e4.ui.importer.wizard" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.buildship.ui.importwizards"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.jdt.ui.Java"/>
+			<item value="org.eclipse.pde.ui.PluginDevelopment"/>
+		</list>
+	</section>
+	<section name="FileSystemImportWizard">
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/mwang/rmitest/RMiClient"/>
+			<item value="/home/mwang/rmitest/RMIServer"/>
+			<item value="/home/mwang/Gls/JeuEnigme/bin"/>
+			<item value="/home/mwang/Gls/JeuEnigme/src"/>
+			<item value="/home/mwang/sl/TP4"/>
+			<item value="/home/mwang/Bureau/Downloads"/>
+		</list>
+	</section>
+</section>

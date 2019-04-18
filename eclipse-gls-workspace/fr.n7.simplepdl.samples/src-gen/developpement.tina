@@ -1,0 +1,4 @@
+[]-(Conception_ready/\Conception_running)/\[]-(Conception_finished/\Conception_running)[]-(Conception_ready/\Conception_finished)
+[]-(RedactionDoc_ready/\RedactionDoc_running)/\[]-(RedactionDoc_finished/\RedactionDoc_running)[]-(RedactionDoc_ready/\RedactionDoc_finished)
+[]-(Developpement_ready/\Developpement_running)/\[]-(Developpement_finished/\Developpement_running)[]-(Developpement_ready/\Developpement_finished)
+[]-(RedactionTests_ready/\RedactionTests_running)/\[]-(RedactionTests_finished/\RedactionTests_running)[]-(RedactionTests_ready/\RedactionTests_finished)

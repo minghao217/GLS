@@ -1,0 +1,38 @@
+[comment encoding = UTF-8 /]
+[module generate('http://petrinet')]
+
+
+[template public generateTina(aPetriNet : PetriNet)]
+[comment @main/]
+[file (aPetriNet.name.concat('.net'), false, 'UTF-8')]
+net [aPetriNet.name/]
+[for (pl : Place | aPetriNet.petrinetelt->getPlaces())]
+pl [ pl.name /] ([pl.jeton/])
+[/for]
+
+[for (tr : Transition | aPetriNet.petrinetelt->getTransitions())]
+tr [ tr.name /] [for (arc : Arc | tr.noeudsPredecesseurs )][ arc.predecesseur.name /][ arc.getPoids() /] [/for] -> [for (arc : Arc | tr.noeudsSuccesseurs   )][ arc.successeur.name/][ arc.getPoids() /] [/for]
+[/for]
+
+[/file]
+[/template]
+
+[query public getPlaces(elements : OrderedSet(PetriNetElt)) : OrderedSet(Place) = 
+	elements->select( e | e.oclIsTypeOf(Place) )
+		->collect( e | e.oclAsType(Place) )
+		->asOrderedSet()
+/]
+
+[query public getTransitions(elements : OrderedSet(PetriNetElt)) : OrderedSet(Transition) = 
+	elements->select( e | e.oclIsTypeOf(Transition) )
+		->collect( e | e.oclAsType(Transition) )
+		->asOrderedSet()
+/]
+
+
+[template public getPoids(arc : Arc)]
+[if (arc.typeArc = TypeArc::ArcSimple)]*[arc.poids /][elseif (arc.typeArc = TypeArc::ReadArc)]?[arc.poids /][/if]
+[/template]
+
+
+

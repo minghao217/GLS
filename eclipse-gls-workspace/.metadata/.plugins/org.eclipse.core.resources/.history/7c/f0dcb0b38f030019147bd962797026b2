@@ -1,0 +1,9 @@
+grammar n7.Game with org.eclipse.xtext.common.Terminals
+
+generate game "http://www.Game.n7"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';

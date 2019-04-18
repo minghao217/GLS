@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.eclipse.ocl.xtext.oclinecore.validation.OCLinEcoreEObjectValidator"/>
+<fullyQualifiedTypeName name="petriNet.Transition"/>
+<fullyQualifiedTypeName name="simplepdl.WorkDefinition"/>
+<fullyQualifiedTypeName name="petriNet.TypeArc"/>
+<fullyQualifiedTypeName name="petriNet.PetriNet"/>
+<fullyQualifiedTypeName name="simplepdl.Ressource"/>
+<fullyQualifiedTypeName name="simplepdl.Allocation"/>
+<fullyQualifiedTypeName name="fr.n7.gls.test.Statistiques.Resultat"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="rmi.Namenode"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="ordo.NameNode"/>
+<fullyQualifiedTypeName name="nn.NameNode"/>
+<fullyQualifiedTypeName name="formats.Format.Type"/>
+<fullyQualifiedTypeName name="fr.n7.stl.block.ast.scope.SymbolTable"/>
+</qualifiedTypeNameHistroy>

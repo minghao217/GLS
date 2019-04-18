@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ASCII"?>
+<petrinet:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:petrinet="http://petrinet" name="developpement">
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="Conception_ready" noeudsSuccesseurs="//@petrinetelt.6" jeton="1"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="Conception_started" noeudsSuccesseurs="//@petrinetelt.44 //@petrinetelt.47" noeudsPredecesseurs="//@petrinetelt.7"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="Conception_running" noeudsSuccesseurs="//@petrinetelt.9" noeudsPredecesseurs="//@petrinetelt.8"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="Conception_finished" noeudsSuccesseurs="//@petrinetelt.45 //@petrinetelt.46" noeudsPredecesseurs="//@petrinetelt.10"/>
+  <petrinetelt xsi:type="petrinet:Transition" net="/" name="Conception_start" noeudsSuccesseurs="//@petrinetelt.7 //@petrinetelt.8" noeudsPredecesseurs="//@petrinetelt.6 //@petrinetelt.54 //@petrinetelt.56"/>
+  <petrinetelt xsi:type="petrinet:Transition" net="/" name="Conception_finish" noeudsSuccesseurs="//@petrinetelt.10 //@petrinetelt.55 //@petrinetelt.57" noeudsPredecesseurs="//@petrinetelt.9"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.0" successeur="//@petrinetelt.4" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.4" successeur="//@petrinetelt.1" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.4" successeur="//@petrinetelt.2" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.2" successeur="//@petrinetelt.5" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.5" successeur="//@petrinetelt.3" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="RedactionDoc_ready" noeudsSuccesseurs="//@petrinetelt.17" jeton="1"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="RedactionDoc_started" noeudsPredecesseurs="//@petrinetelt.18"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="RedactionDoc_running" noeudsSuccesseurs="//@petrinetelt.20" noeudsPredecesseurs="//@petrinetelt.19"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="RedactionDoc_finished" noeudsPredecesseurs="//@petrinetelt.21"/>
+  <petrinetelt xsi:type="petrinet:Transition" net="/" name="RedactionDoc_start" noeudsSuccesseurs="//@petrinetelt.18 //@petrinetelt.19" noeudsPredecesseurs="//@petrinetelt.17 //@petrinetelt.44 //@petrinetelt.58 //@petrinetelt.60"/>
+  <petrinetelt xsi:type="petrinet:Transition" net="/" name="RedactionDoc_finish" noeudsSuccesseurs="//@petrinetelt.21 //@petrinetelt.59 //@petrinetelt.61" noeudsPredecesseurs="//@petrinetelt.20 //@petrinetelt.45"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.11" successeur="//@petrinetelt.15" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.15" successeur="//@petrinetelt.12" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.15" successeur="//@petrinetelt.13" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.13" successeur="//@petrinetelt.16" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.16" successeur="//@petrinetelt.14" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="Developpement_ready" noeudsSuccesseurs="//@petrinetelt.28" jeton="1"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="Developpement_started" noeudsPredecesseurs="//@petrinetelt.29"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="Developpement_running" noeudsSuccesseurs="//@petrinetelt.31" noeudsPredecesseurs="//@petrinetelt.30"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="Developpement_finished" noeudsSuccesseurs="//@petrinetelt.48" noeudsPredecesseurs="//@petrinetelt.32"/>
+  <petrinetelt xsi:type="petrinet:Transition" net="/" name="Developpement_start" noeudsSuccesseurs="//@petrinetelt.29 //@petrinetelt.30" noeudsPredecesseurs="//@petrinetelt.28 //@petrinetelt.46 //@petrinetelt.62 //@petrinetelt.64"/>
+  <petrinetelt xsi:type="petrinet:Transition" net="/" name="Developpement_finish" noeudsSuccesseurs="//@petrinetelt.32 //@petrinetelt.63 //@petrinetelt.65" noeudsPredecesseurs="//@petrinetelt.31"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.22" successeur="//@petrinetelt.26" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.26" successeur="//@petrinetelt.23" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.26" successeur="//@petrinetelt.24" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.24" successeur="//@petrinetelt.27" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.27" successeur="//@petrinetelt.25" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="RedactionTests_ready" noeudsSuccesseurs="//@petrinetelt.39" jeton="1"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="RedactionTests_started" noeudsPredecesseurs="//@petrinetelt.40"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="RedactionTests_running" noeudsSuccesseurs="//@petrinetelt.42" noeudsPredecesseurs="//@petrinetelt.41"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="RedactionTests_finished" noeudsPredecesseurs="//@petrinetelt.43"/>
+  <petrinetelt xsi:type="petrinet:Transition" net="/" name="RedactionTests_start" noeudsSuccesseurs="//@petrinetelt.40 //@petrinetelt.41" noeudsPredecesseurs="//@petrinetelt.39 //@petrinetelt.47 //@petrinetelt.66 //@petrinetelt.68"/>
+  <petrinetelt xsi:type="petrinet:Transition" net="/" name="RedactionTests_finish" noeudsSuccesseurs="//@petrinetelt.43 //@petrinetelt.67 //@petrinetelt.69" noeudsPredecesseurs="//@petrinetelt.42 //@petrinetelt.48"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.33" successeur="//@petrinetelt.37" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.37" successeur="//@petrinetelt.34" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.37" successeur="//@petrinetelt.35" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.35" successeur="//@petrinetelt.38" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.38" successeur="//@petrinetelt.36" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.1" successeur="//@petrinetelt.15" poids="1" typeArc="ReadArc"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.3" successeur="//@petrinetelt.16" poids="1" typeArc="ReadArc"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.3" successeur="//@petrinetelt.26" poids="1" typeArc="ReadArc"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.1" successeur="//@petrinetelt.37" poids="1" typeArc="ReadArc"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.25" successeur="//@petrinetelt.38" poids="1" typeArc="ReadArc"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="Concepteur" noeudsSuccesseurs="//@petrinetelt.54" noeudsPredecesseurs="//@petrinetelt.55" jeton="3"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="Developpeur" noeudsSuccesseurs="//@petrinetelt.64" noeudsPredecesseurs="//@petrinetelt.65" jeton="2"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="Machine" noeudsSuccesseurs="//@petrinetelt.56 //@petrinetelt.58 //@petrinetelt.62 //@petrinetelt.66" noeudsPredecesseurs="//@petrinetelt.57 //@petrinetelt.59 //@petrinetelt.63 //@petrinetelt.67" jeton="4"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="Redacteur" noeudsSuccesseurs="//@petrinetelt.60" noeudsPredecesseurs="//@petrinetelt.61" jeton="1"/>
+  <petrinetelt xsi:type="petrinet:Place" net="/" name="Testeur" noeudsSuccesseurs="//@petrinetelt.68" noeudsPredecesseurs="//@petrinetelt.69" jeton="2"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.49" successeur="//@petrinetelt.4" poids="2"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.5" successeur="//@petrinetelt.49" poids="2"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.51" successeur="//@petrinetelt.4" poids="2"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.5" successeur="//@petrinetelt.51" poids="2"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.51" successeur="//@petrinetelt.15" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.16" successeur="//@petrinetelt.51" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.52" successeur="//@petrinetelt.15" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.16" successeur="//@petrinetelt.52" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.51" successeur="//@petrinetelt.26" poids="3"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.27" successeur="//@petrinetelt.51" poids="3"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.50" successeur="//@petrinetelt.26" poids="2"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.27" successeur="//@petrinetelt.50" poids="2"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.51" successeur="//@petrinetelt.37" poids="2"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.38" successeur="//@petrinetelt.51" poids="2"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.53" successeur="//@petrinetelt.37" poids="1"/>
+  <petrinetelt xsi:type="petrinet:Arc" net="/" predecesseur="//@petrinetelt.38" successeur="//@petrinetelt.53" poids="1"/>
+</petrinet:PetriNet>

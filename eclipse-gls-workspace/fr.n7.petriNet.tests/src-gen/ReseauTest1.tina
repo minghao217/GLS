@@ -1,0 +1,6 @@
+net ReseauTest1
+pl Place1 (1)
+pl Place2 (0)
+
+tr Tr1 Place1*1  -> Place2*2 
+

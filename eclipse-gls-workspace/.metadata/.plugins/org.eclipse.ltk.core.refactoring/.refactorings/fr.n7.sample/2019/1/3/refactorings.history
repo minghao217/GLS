@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;simplePDL.odesign&apos; to &apos;fr.n7.sample&apos;" description="Move &apos;simplePDL.odesign&apos; to &apos;fr.n7.sample&apos;" destination="/fr.n7.sample" element1="/fr.n7.simplePDL.design/description/simplePDL.odesign" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1547657496847" updateReferences="true"/>
+</session>

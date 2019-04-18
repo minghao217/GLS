@@ -1,0 +1,9 @@
+process p1 {
+	wd wd1
+	wd wd2
+	ws s2s from wd1 to wd2
+	note "Je suis une guidance"
+	res riz (2)	
+}
+
+

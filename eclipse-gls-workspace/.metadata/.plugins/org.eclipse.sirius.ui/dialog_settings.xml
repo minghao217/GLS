@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExportRepresentationsAsImagesDialog">
+		<item value="PNG" key="ExportRepresentationsAsImagesDialog.imageFormat"/>
+		<list key="ExportRepresentationsAsImagesDialog.file">
+			<item value="/home/mwang/eclipse-gls-workspace/fr.n7.petriNet"/>
+			<item value="/home/mwang/eclipse-gls-workspace/fr.n7.petriNet/RepresentationPetriNet.png"/>
+		</list>
+	</section>
+</section>

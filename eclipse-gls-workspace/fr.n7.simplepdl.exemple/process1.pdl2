@@ -1,0 +1,5 @@
+process p1 {
+	wd wd1 {}
+	wd wd2 { starts if wd1 started }
+	note "Je suis une guidance"
+}

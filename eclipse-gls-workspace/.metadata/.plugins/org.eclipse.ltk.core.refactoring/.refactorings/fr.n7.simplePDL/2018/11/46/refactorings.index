@@ -1,0 +1,8 @@
+1542101574202	Rename method 'createPlace'
+1542101583554	Rename method 'createArc'
+1542101595303	Rename method 'createTransition'
+1542103113064	Rename type 'petriNetModule'
+1542103789566	Rename type 'processusReseauPetriModule'
+1542105100056	Rename type 'ProcessusReseauPetriModule'
+1542105605288	Move file
+1542106308130	Rename local variable 'packageInstance'

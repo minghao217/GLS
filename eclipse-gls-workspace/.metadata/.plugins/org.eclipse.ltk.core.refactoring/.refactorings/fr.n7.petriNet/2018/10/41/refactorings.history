@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;fr.n7.petriNet/SimplePDL.ecore&apos; to &apos;PetriNet.ecore&apos;" description="Rename resource &apos;SimplePDL.ecore&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="SimplePDL.ecore" name="PetriNet.ecore" stamp="1539357086129" updateReferences="true"/>
+</session>

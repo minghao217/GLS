@@ -1,0 +1,85 @@
+grammar org.xtext.n7.game.MyGame with org.eclipse.xtext.common.Terminals
+
+generate myGame "http://www.xtext.org/n7/game/MyGame"
+
+Jeu returns Jeu :
+	'jeu' name=ID '{'
+		jeuElements+=JeuElement*
+	'}';
+
+JeuElement :
+	(Chemin | Lieu | Contenu | Explorateur)
+	'texte' texte = STRING
+	('textesuivant' textesuivant = STRING '{' condtexte = Condition '}')*
+	'}'
+	;
+
+Contenu :
+	(Personne | Connaissance | Objet)
+	('visible' visible = Condition)?
+	('actif' actif = Condition)?
+	;
+
+Chemin :
+	'chemin' name=ID '{'
+		'from' lieu1 = [Lieu] 'to' lieu2 = [Lieu]
+		('ouvert' ouvert = Condition)?
+		obligatoire ?= 'obligatoire'?
+		('visible' visible = Condition)?
+		('recu' recu += ContenuCond+)?
+		('consome' consome += ContenuCond+)?;
+
+Lieu :
+	'lieu' name=ID '{'
+		('depot' depot = Condition)?
+		('contenus' contenus += ContenuCond+)?
+		'type' type = TypeLieu;
+ 
+ContenuCond :
+	Contenu = [Contenu] '{' condrecu = Condition '}';
+ 
+Explorateur :
+	'explorateur' name=ID '{'
+		'maxObj' maxObj = INT
+		'contenus' contenu += Contenu*;
+
+Personne :
+	'personne' name=ID '{'
+		obligatoire ?= 'obligatoire'
+		interactions = Interaction;
+
+Connaissance :
+	'connaissance' name=ID '{';
+
+Objet :
+	'objet' name=ID '{'
+		'taille' taille = INT
+		('transformable' conditions = Condition)?;
+
+Interaction :
+	'interaction' name=ID '{'
+		'texte' text = STRING
+		('debut' debut = Condition)?
+		choix += Choix+
+	'}';
+
+Choix :
+	'choix' name=ID '{'
+		'texte' texte = STRING
+		('fin' fin = Condition)?
+		'possible' possible = Condition
+		('contenu' contenu += Contenu+ ('{' condcont = Condition '}')?)?
+		('consomme' consomme += Contenu+ ('{' condcons = Condition '}')?)?
+	'}';
+
+enum Boolean :
+	True = 'true' | False = 'false';
+
+Condition :
+	dis += ElemDisjonction+ | cd = Boolean;
+ElemDisjonction :
+	'('conj+=ElemConjonction+')';
+ElemConjonction : cont=[Contenu] | 'non' cont=[Contenu];
+
+enum TypeLieu :
+	depart = 'DEPART' | normal = 'NORMAL' | fin = 'FIN';
